@@ -104,6 +104,10 @@ class PeerManager {
 
     this.peerSocket.on('error', err => {
       console.log('Peer Socket ERROR: ' + err)
+
+      setTimeout(function () {
+        connectToPeer(ip, port)
+      },500)
     })
 
     this.peerSocket.connect(port, ip, () => {
@@ -120,6 +124,8 @@ class PeerManager {
   constructor(secret, targetSecret) {
     this.secret = secret
     this.targetSecret = targetSecret
+
+    console.log('Attempting to connect to handshake server at ' + handshakeIP + ':' + handshakePort)
 
     const socket = new net.Socket()
 

@@ -1,6 +1,6 @@
 const net = require('net')
 const security = require('./security')
-const { p2pPort, handshakePort, handshakeIP } = require('./config')
+const { handshakePort, handshakeIP } = require('./config')
 
 const server = net.createServer()
 

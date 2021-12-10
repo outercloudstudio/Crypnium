@@ -1,4 +1,5 @@
 {
-    "handshakePort": 7071,
-    "handshakeIP": "127.0.0.1"
+    "handshakePort": 25566,
+    "handshakeIP": "76.86.240.158",
+    "handshakeRemoteIP": "76.86.240.158"
 }
