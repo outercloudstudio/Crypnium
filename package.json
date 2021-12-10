@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "handshake": "node handshakeServer.js"
+  }
+}
