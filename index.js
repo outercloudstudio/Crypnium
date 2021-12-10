@@ -106,7 +106,7 @@ class PeerManager {
       console.log('Peer Socket ERROR: ' + err)
 
       setTimeout(function () {
-        connectToPeer(ip, port)
+        this.connectToPeer(ip, port)
       },500)
     })
 
